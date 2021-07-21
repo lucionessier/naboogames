@@ -1,3 +1,5 @@
+// En app.js importo los components que voy a utilizar, en un principio solamente el Navbar con los estilos de app.js en un archivo CSS
+
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';

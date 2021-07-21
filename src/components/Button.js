@@ -1,3 +1,5 @@
+// Acá importo React y los estilos del componente Button
+
 import React from 'react';
 import './Button.css';
 

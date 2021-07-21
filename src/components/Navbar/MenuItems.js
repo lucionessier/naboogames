@@ -1,3 +1,5 @@
+// Este es el array de objetos que voy a importar para utilizar en el Navbar y renderizar los LI. Contiene un nombre, la URL a la que va a dirigir y la classname
+
 export const MenuItems = [
     {
         title: 'Home',
@@ -23,9 +25,9 @@ export const MenuItems = [
         cName: 'nav-links',
     },
 
-    {
-        title: 'Sign up',
-        url: '#',
-        cName: 'nav-links-mobile',
-    }
+    // {
+    //     title: 'Sign up',
+    //     url: '#',
+    //     cName: 'nav-links-mobile',
+    // }
 ]

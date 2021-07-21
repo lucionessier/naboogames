@@ -1,3 +1,5 @@
+// En el index hago todas las importaciones correspondientes para que se renderice la App.js entera
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

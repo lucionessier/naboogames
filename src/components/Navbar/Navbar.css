@@ -1,10 +1,10 @@
 .NavBarItems {
-    background: linear-gradient(90deg, rgb(110, 94,254) 0%, rgba(73,63,252,1) 100%);
+    background: linear-gradient(340deg, rgba(17,69,117,1) 0%, rgba(0,19,51,1) 100%);
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .navbar-logo {
@@ -14,8 +14,8 @@
     cursor: pointer;
 }
 
-.fa-react {
-    margin-left: 0.5rem;
+.fas.fa-jedi{
+    margin-left: 0.7rem;
     font-size: 1.6rem;
 }
 
@@ -27,19 +27,42 @@
     text-align: center;
     width: 70vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .nav-links {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    position: relative;
 }
 
 .nav-links:hover {
-    background-color: #6d76f7;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
+    color: white;
+}
+
+.nav-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #3acbf7;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    box-shadow: 0px 0px 12px aqua;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .fa-bars {
@@ -54,6 +77,8 @@
     display: none;
 }
 
+
+
 @media screen and (max-width:960px) {
     .NavBarItems {
         position: relative;
@@ -63,7 +88,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 500px;
+        height: 400px;
         position: absolute;
         top: 80px;
         left: -100%;
@@ -72,7 +97,7 @@
     }
 
     .nav-menu.active {
-        background: #6668f4;
+        background: linear-gradient(340deg, rgba(17,69,117,1) 0%, rgba(0,19,51,1) 100%);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -87,7 +112,6 @@
     }
 
     .nav-links:hover {
-        background-color: #7577fa;
         border-radius: 0;
     }
 
@@ -120,16 +144,9 @@
         margin: 2rem auto;
         border-radius: 4px;
         width: 80%;
-        background: #4ad9e4;
         text-decoration: none;
         color: #fff;
         font-size: 1.5rem;
-    }
-
-    .nav-links-mobile:hover {
-        background: #fff;
-        color: #6568f4;
-        transition: 250ms;
     }
 
     Button {
