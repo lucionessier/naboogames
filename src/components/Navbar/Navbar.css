@@ -12,6 +12,9 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .fas.fa-jedi{
@@ -153,3 +156,4 @@ ul li a:hover::after {
         display: none;
     }
 }
+

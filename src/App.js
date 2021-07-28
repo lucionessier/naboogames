@@ -4,6 +4,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
+import HeroSection from "./components/HeroSection"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </a>
       </header> */}
       <Navbar />
+      <HeroSection/>
     </div>
   );
 }
