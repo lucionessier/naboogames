@@ -1,7 +1,7 @@
 // En este caso importo en el componente Navbar los componentes Button y los MenuItems que van a ser insertados en el Nav
 
 import React, { Component } from 'react';
-import { Button } from '../Button';
+import { Button } from "./Button";
 import { MenuItems } from './MenuItems';
 import './Navbar.css'
 
