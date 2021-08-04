@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from '../Navbar/Button';
+import { AddToCart  } from './CardElements';
 
 
 
@@ -26,12 +27,16 @@ export default function ItemCount ({ initial = 0, stock = 0, onAdd = () => {} })
 
     return(
       <>
+      
+        <AddToCart>
+
+            <Button onClick={() => decrement()}id="decrementButton"><i className="fas fa-minus-circle"></i></Button>
         
-        <Button onClick={() => decrement()}id="decrementButton"><i className="fas fa-minus-circle"></i></Button>
-        <p>{count}</p>
+            <p>{count}</p>
         
-        <Button onClick={() => increment()}id="incrementButon"><i className="fas fa-plus-circle"></i></Button>
-        
+            <Button onClick={() => increment()}id="incrementButon"><i className="fas fa-plus-circle"></i></Button>
+
+        </AddToCart>
 
         {!addedtoCarrito && 
             <Button onClick={handleOnAddCarrito}>AGREGAR AL CARRITO</Button>

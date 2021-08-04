@@ -1,5 +1,5 @@
 import React from 'react';
-import { ItemsBg, ItemsCard, AddToCart } from './CardElements';
+import { ItemsBg, ItemsCard } from './CardElements';
 // import { Button } from '../Navbar/Button';
 import ItemCount from './ItemCount';
 
@@ -11,11 +11,11 @@ export const ProductCards = () => {
            
                 <p style={{margin: "20px"}}>Nombre del producto</p>
                
-                <AddToCart>
+                
                     
-                    <ItemCount stock={15} onAdd={() => console.log("Agregado al carrito")}></ItemCount>
+                    <ItemCount stock={10} onAdd={() => console.log("Agregado al carrito")}></ItemCount>
                     
-                </AddToCart>
+               
 
                 
 
