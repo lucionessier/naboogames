@@ -2,26 +2,27 @@ import styled from 'styled-components';
 
 export const ItemsBg = styled.div`
     background-color: rgba(17,69,117,1);
-    height: 350px;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     padding: 20px;
+    flex-wrap: wrap;
 `
 
 export const ItemsCard = styled.div`
     background-color: white;
-    height: 230px;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 300px;
     flex-direction: column;
-    padding: 20px;
     margin: 20px;
     position: relative;
     border-radius: 20px;
+    padding-bottom: 2em;
 `
 
 export const AddToCart = styled.div`
